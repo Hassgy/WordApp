@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_main"
+        android:title="首页"></item>
+    <item android:id="@+id/contestFragment"
+        android:icon="@drawable/ic_contest"
+        android:title="测试"></item>
+    <item android:id="@+id/userFragment"
+        android:icon="@drawable/ic_user"
+        android:title="用户"></item>
+</menu>

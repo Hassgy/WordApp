@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.UpdatePassActivity">
+    <include layout="@layout/title"></include>
+    <EditText
+        android:id="@+id/et_update_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入用户名"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/et_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"></EditText>
+
+    <EditText
+        android:id="@+id/et_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入新密码"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_update_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"></EditText>
+    <EditText
+        android:id="@+id/et_update_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入新密码"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_update_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        android:background="@drawable/et_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"></EditText>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_update_repassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:background="@drawable/login_bg"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

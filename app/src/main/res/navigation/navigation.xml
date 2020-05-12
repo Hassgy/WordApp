@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.wordapp.ui.fragment.MainFragment"
+        android:label="MainFragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/contestFragment"
+        android:name="com.example.wordapp.ui.fragment.ContestFragment"
+        android:label="ContestFragment" />
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.wordapp.ui.fragment.UserFragment"
+        android:label="UserFragment" />
+</navigation>
